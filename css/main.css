@@ -1,9 +1,9 @@
 
 #btn-trabajos{
-  padding: 60px;
+  padding-top: 20%;
 }
 
-.icon-social{
+img{
 	width: 100%;
 }
 
@@ -12,4 +12,13 @@
 }
 .container{
 	padding-top: 10%;
+}
+#sobre-ilse{
+	display: none;
+}
+#skills{
+	display: block;
+}
+#experiencia{
+	display: none;
 }

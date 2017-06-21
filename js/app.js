@@ -1,41 +1,42 @@
-var cargarPagina = function(){
-	$("#btn-1").click(function();
-}
 
-$(document).ready(cargarPagina);
+var btnSobremi=document.getElementById('btn-sobremi');
+var sobreMi=document.getElementById('sobre-ilse');
+
+var btnSkills=document.getElementById('btn-skills');
+var skills=document.getElementById('skills');
 
 
-
-var origen=document.getElementById('buttonOrigen');
-var textOrigen=document.getElementById('origen');
-
-var evolucion=document.getElementById('buttonEvolucion');
-var textEvolucion=document.getElementById('evolucion');
-
-origen.addEventListener("dblclick", showO);
-origen.addEventListener("click", hiddenO);
+btnSobremi.addEventListener("click", showO);
+btnSobremi.addEventListener("click", noneO);
  
-evolucion.addEventListener("dblclick", showE);
-evolucion.addEventListener("click", hiddenE);
+btnSkills.addEventListener("click", showS);
+btnSkills.addEventListener("click", noneS);
+
+
+
 
 
 function showO() {
-  textOrigen.style.visibility = "visible";
+  sobreMi.style.display = "block";
+
 }
-function hiddenO() {
-  textOrigen.style.visibility = "hidden";
+function noneO() {
+  skills.style.display="none";
 }
 
-function showE() {
-  textEvolucion.style.visibility = "visible";
+function showS() {
+  skills.style.display = "block";
+ 
 }
 
-function hiddenE() {
-  textEvolucion.style.visibility = "hidden";
+function noneS() {
+  sobreMi.style.display = "none";
+
 }
 
-var buttonPost=document.getElementById('buttonPost');
-buttonPost.addEventListener("click", postImg);
+
+
+
 
 
    
