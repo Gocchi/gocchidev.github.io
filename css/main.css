@@ -1,23 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300);
-#black {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: #000;
+
+#btn-trabajos{
+  padding: 60px;
 }
-#text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 60px;
-  line-height: 60px;
-  font-family: "Roboto Condensed";
-  text-align: right;
+
+.icon-social{
+	width: 100%;
 }
-#text span {
-  color: #000;
+
+#container-social{
+	width: 10%;
+}
+.container{
+	padding-top: 10%;
 }
