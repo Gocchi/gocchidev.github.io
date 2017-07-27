@@ -1,94 +1,76 @@
 
 body{
 	box-sizing: border-box;
-	background-image: url(../img/wallpaper-starwars.jpg);
-	background-size: 100%;
-	overflow-y: scroll;
-  	overflow-x: hidden;
-  	font-family: 'Poppins', sans-serif;
+  background-image: url(../img/intro-wallpaper.jpeg);
+  font-family: 'Poppins', sans-serif;
 	margin: 0;
 	padding: 0;
 }
+.img-full{
+  width: 100%;
+}
+#principal{
+  background-image: url(../img/wallpaper-starwars2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;//ocupara todo el espacio del section que lo contiene
+  background-position: center;
+  height: 100vh;
+ 
+}
 .menu-nav {
   opacity: 0.9;	
-  position:absolute;
-  width:15%;
-  height:100%;
-  top:0;
-  left:-220px; /*Ocultamos el menú en la parte izquierda para que no se vea a menos que pulsemos sobre la hamburguesa*/
-  padding-top:47px;
   background-color: rgba(29, 33, 32, 1);
-  border-right:4px solid #EB1914;
-  transition:all .5s ease; /*Damos a la caja del menú una transición para que tenga un desplazamiento suave*/
-}
+ }
+
+ .text{
+  margin-left:5%;
+  margin-top:5%;
+  text-align: justify;
+ }
    
 /*Estilos de los li del menú*/
 .nav__item {
    	 text-decoration: none;
-     display:block;
-     width:96%;
-     margin:0 auto;
-     line-height:6;
-     position:relative; /*Le damos una posición relativa para posteriormente añadirle el triangulo que indica que se está en la página actual del menú*/
-     text-align:center;
      color:#fff;
    }
 .active{
 	background-color: #EB1914; 
-	width: 100%;
+
 }
-a:hover{
-    background-color: #555;
+.nav__item:hover{
+    background-color: gray;
     color: white;
     width: 100%;
 }
-      
-  /*Estos son los estilos de la hamburguesa del menú que abre y cierra el mismo*/
-  .menu-toogle {
-    position:absolute; /*Lo posicionamos absolutamente para poder darle una posición y poder moverlo según el menú esté abierto o cerrado*/
-    width: 20vh;
-    line-height:1.1;
-    text-align:center;
-    top:6.5px; /*Le damos una posición top y left en donde queramos que se encuentre la hamburguesa del menú*/
-    left: 8px; 
-    border-radius:3px;
-    background-color: #EB1914;
-    transition: all .5s ease; /*Añadimos una transición para que realice un desplazamineto suave*/
-    z-index:10;
-  }
-    
-/*Añadimos la haburguesa y le damos unos estilos*/
-.menu-toogle::before {
-    content:"Menú";
-    font-size:32px;
-    color: #000;
+.container-logo{
+  opacity: 0.9;
+  background-color: gray;
+  margin-top:30vh;
+
+}
+.logo{
+ 
+  display: block;
+  margin: 0 auto;
 }
 
-/* Le damos unos estilos al contenedor principal*/
-.main-w {
-  width:100%;
-  height:100vh;
-  transition: all .5s ease;
-}   
+.container-full{
+  overflow: hidden;
+}
 
+#sobre-mi{
+  margin-top: 10vh;
+  color: white;
+  height: 100vh;
+  opacity: 0.8;
+  background-color:#000;
+}
 
+.size-img{
+  height: 95vh;
+}
 
-    /*Estos son los estilos que le dan la funcionalidad al menú*/
-    /*El checkbox según esté activado o no hará que el menú aparezca o desaparezca*/
-    .menu-checkbox {
-      display:none; /*Ocultamos el checkbox pues no nos interesa que se vea*/
-    }
-    .menu-checkbox:checked ~ .menu-nav {
-      left:0px; /*Le quitamos el left negativo para que el menú vuelva a su posición original*/
-      position:fixed; /* Fijamos el menú lateral para que se desplace cuando hagamos scroll*/
-    }
-    .menu-checkbox:checked ~ .main-w {
-      margin-left:0px; /*Cuando el checkbox asigna un margen al contenedor principal para que se desplace junto con el menú*/
-    }
-    .menu-checkbox:checked ~ .menu-toogle { 
-      left:208px;
-      position:fixed; /*Fijamos la hamburgues para que se desplace junto con el menú*/
-    }
-
-
-
+.icon{
+  width: 100%;
+}      
+  

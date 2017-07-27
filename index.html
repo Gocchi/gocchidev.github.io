@@ -4,185 +4,101 @@
 		<title>Ilse Centeno</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- <link rel="stylesheet" type="text/css" href="css/materialize.min.css"> -->
 		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css"
+		>
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
 	</head>
 	<body>
-		<section id="menu">
-			<input type="checkbox" class="menu-checkbox" id="menu-toogle"/>
-			<label for="menu-toogle" class="menu-toogle"></label>
-			<nav class="menu-nav">
-				<a href="#" class="nav__item current active">Inicio</a>
-				<a href="#" class="nav__item">Sobre Ilse</a>
-				<a href="#" class="nav__item">Skills</a>
-				<a href="#" class="nav__item">Portafolio</a>
-				<a href="#" class="nav__item">Contacto</a>
-			</nav>
+		<div class="container-full">
+		<section id="principal" class="container-fluid">
+			<div class="row navbar-fixed ">
+				<nav class="menu-nav">
+				    <div class="col m12 col s12">
+				      <ul id="nav-mobile">
+				        <li><a href="#" class="nav__item active">Inicio</a></li>
+				        <li><a href="#sobre-mi" class="nav__item">Sobre Ilse</a></li>
+				        <li><a href="#" class="nav__item">Skills</a></li>
+				        <li><a href="#" class="nav__item">Portafolio</a></li>
+				        <li><a href="#" class="nav__item">Contacto</a></li>
+				      </ul>
+				    </div>
+				</nav>
+			</div>
+			<div class="row">
+				<div class="container-logo col m12 s12">
+					<div>
+						<img class="logo responsive-img" src="img/gocchi-dos-white.png">
+					</div>
+				</div>	
+			</div>	
 		</section>
-		
-		
-		
-		
-	<!-- 	<section id="principal" class="container">
-			<div class='row console-container'>
-				<div class="col m12">
-					<h2 class="titulo">Ilse Centeno Z.</h2>
-					<span id='text'></span>
-					<div class='console-underscore' id='console'>&#95;</div>
-				</div class="row">
-					<div class="col m3">
-						<a href="#trabajos" class="indigo lighten-2 btn">Ver trabajos</a>
-					</div>
-					<div class="col m3">
-						<a href="#contacto" class="indigo lighten-2 btn">Contacto</a>
-					</div>
-				<div>	
+
+		<section id="sobre-mi" class="container-fluid">
+		    	<div class="row">
+		    		<div class="col m4">
+		    			<img class="img-full size-img" src="img/darth-vertical2.jpg">
+		    		</div>
+		    		<div class="col m6 s12 text">
+		    			<h1>Ilse y Coder ser yo...</h1>
+			    		<p>Tengo 24 años de edad vivo en la Ciudad de México.Soy estudiante en Laboratoria.Donde me forme como front-end developer y sigo preparandome para tener un enfoque full-stack. Lo que más me gusta de la tecnología es el autoaprendizaje y que se pueden desarrollar cosas desde cero donde dejas ver toda tu creatividad.En mis tiempos libres leo muchas novelas de ciencia ficción, también me gusta escuchar y conocer música y de vez en cuando asisto a hackatones y eventos geeks.</p>
+						<div class="center">
+							<h5>Aquí hay un poco más de mi</h5>
+							<a href="assets/ilseCenteno.pdf" download class="red btn">Descarga CV</a>
+						</div>
+		    		</div>
+		    	</div>
+		</section>
+
+		<section class="container-fluid">
+			<div class="container">
+		    		<div class="row">
+		    			<div class="col m4 s6">
+		    				<img src="img/css-3.png">
+		    			</div>
+		    			<div class="col m4 s6">
+		    				<img src="img/java-script.png">
+		    			</div>
+		    			<div class="col m4 s6">
+		    				<img src="img/html-5-logo.png">
+		    			</div>
+		    		</div>
+		    		<div class="row">
+		    			<div class="col m3 s6">
+		    				<img class="icon" src="img/bootstrap.png"
+		    			</div>
+		    			<div class="col m4 s6">
+		    				<img class="icon" src="img/git.png">
+		    			</div>
+		    			<div class="col m4 s6">
+		    				<img src="http://via.placeholder.com/100x100">
+		    			</div>
+		    		</div>
+		</section>
+				
+			<div class="row">
+				<div class="col m6">
+					
+				</div>
+				<div class="col m6">
 					
 				</div>
 			</div>
 		</section>
-				
 
-			<section id="about" class="contenedor container center-align"> 
-				<div class="row center-align">
-					<div class="col m4 offset-m2">
-						<a id="btn-sobremi" class="waves-effect waves-light indigo lighten-2 btn">SOBRE ILSE</a>	
-					</div>
-					<div class="col m4">
-						<a id="btn-skills" class="waves-effect waves-light indigo lighten-2 btn">SKILLS</a>
-					</div>
-				</div>
-				<div id="sobre-ilse" class="contenedor oculto">
-					<p>Tengo 24 años de edad vivo en la Ciudad de México.Soy estudiante en Laboratoria.Donde me forme como front-end developer y sigo preparandome para tener un enfoque full-stack. Lo que más me gusta de la tecnología es el autoaprendizaje y que se pueden desarrollar cosas desde cero donde dejas ver toda tu creatividad.En mis tiempos libres leo muchas novelas de ciencia ficción, también me gusta escuchar y conocer música y de vez en cuando asisto a hackatones y eventos geeks.</p>
-					<h5>Aquí hay un poco más de mi</h5>
-					<a href="assets/ilseCenteno.pdf" download class="indigo lighten-2 btn">Descarga CV</a>
-				</div>
-				<div id="skills">
-					<div class="row">
-						<div class="col m3">
-							<h5>Maquetación</h5>
-							<ul>
-								<li class="img-skills responsive-img"><img src="img/html5.png"></li>
-								<li class="img-skills responsive-img"><img src="img/css3.png"></li>
-
-							</ul>
-						</div>
-						<div class="col m3">
-							<h5>Lenguaje de Programación</h5>
-							<ul>
-								<li class="img-skills responsive-img"><img src="img/javascript.png"></li>
-							</ul>
-						</div>
-							<div class="col m3">
-							<h5>Frameworks</h5>
-							<ul>
-								<li class="img-skills responsive-img"><img src="img/bootstrap.png"></li>
-        						<li class="img-skills responsive-img"><img src="img/materializecss.png"></li>
-       						</ul>
-						</div>
-							<div class="col m3">
-							<h5>Herramientas de Desarrollol</h5>
-							<ul>
-								<li class="img-skills responsive-img"><img src="img/git.png"></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-
-
-	 	<section  id="trabajos" class="container center-align">
-	 		<h3 class="titulo">Lo que he realizado</h3>
+	 	<section  id="trabajos" class="container-fluid">
 	 		<div class="row">
-		     <div class="container-a4">
-		<ul class="caption-style-4">
-			<li>
-				<img src="http://via.placeholder.com/300x300" alt="">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>Amazing Caption</h1>
-						<p>Whatever It Is - Always Awesome</p>
-					</div>
-				</div>
-			</li>
-			<li>
-				<img src="http://via.placeholder.com/300x300" alt="">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>Amazing Caption</h1>
-						<p>Whatever It Is - Always Awesome</p>
-					</div>
-				</div>
-			</li>
-			<li>
-				<img src="http://via.placeholder.com/300x300" alt="">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>Amazing Caption</h1>
-						<p>Whatever It Is - Always Awesome</p>
-					</div>
-				</div>
-			</li>
-			<li>
-				<img src="http://via.placeholder.com/300x300" alt="">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>Amazing Caption</h1>
-						<p>Whatever It Is - Always Awesome</p>
-					</div>
-				</div>
-			</li>
-			<li>
-				<img src="http://via.placeholder.com/300x300" alt="">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1></h1>
-						<p>Bootsrap</p>
-					</div>
-				</div>
-			</li>
-			<li>
-				<img src="http://via.placeholder.com/300x300" alt="">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>Tienda de Frutas</h1>
-						<p>HTML y JAVASCRIPT</p>
-					</div>
-				</div>
-			</li>
-		</ul>
-	</div>
-		    </div>
+	 			
+	 		</div>
 	 	</section>
+	 	</div>
 	    
-	    <section id="contacto" class="container">
-	    	<h3 class="titulo">¿Que tal si trabajamos juntos?</h3>
-	  		<div class="row">
-	  			<div class="col m2 offset-m2">
-	  				<img src="img/telefono.png">
-	  				
-	  			</div>
-	  			<div class="col m2">
-	  				<a href="https://github.com/ilsecentenoz"><img class="icon-social" src="img/github.png"></a>
-	  			</div>
-	  			<div class="col m2">
-	  				<a href="mailto:ilsecenteno93@gmail.com?Subjest=Contacto" target="_top"><img class="icon-social responsive-img" src="img/gmail.png"></a>
-	  			</div>
-	  			<div class="col m2">
-					<a href="https://www.linkedin.com/in/ilse-centeno-z-b71838145/"><img class="icon-social responsive-img" src="img/linkedin.png"></a>
-				</div>
-	  		</div>
-	    </section> -->
+	
 		
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
 	</body>
 </html>
