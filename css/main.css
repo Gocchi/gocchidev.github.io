@@ -1,26 +1,95 @@
 
 body{
 	box-sizing: border-box;
-  background-image: url(../img/intro-wallpaper.jpeg);
-  font-family: 'Poppins', sans-serif;
+  background-image: url(../img/body-wallpaper.jpeg);
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px;
+  opacity: 0.9;
+  background-color: #000;
 	margin: 0;
 	padding: 0;
+  border: none;
+  color: white;
 }
 .img-full{
   width: 100%;
 }
+
 #principal{
-  background-image: url(../img/wallpaper-starwars2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;//ocupara todo el espacio del section que lo contiene
-  background-position: center;
   height: 100vh;
- 
+  border:0;
+}
+#contacto{
+  opacity: 0.7;
+  height: 20vh;
+  margin: 0 auto;
+
+}
+
+#contacto p{
+  color: white;
+  font-size: 0.8em;
+
+}
+
+
+
+/*barra de navegacion*/
+.menu-logo{
+/*  display: none;*/
+  height: 90px;
+  opacity: 0.9; 
+  background-color: rgba(29, 33, 32, 1);
 }
 .menu-nav {
-  opacity: 0.9;	
-  background-color: rgba(29, 33, 32, 1);
+  opacity: 0.8; 
+  background-color: #000;
+  height: 55px;
  }
+
+ul li{
+  
+}
+
+
+.icon-social{
+  width: 3em;
+  height: 3em;
+}
+@font-face {
+    font-family: "starWars";
+    src: url(../fonts/starjedi/Starjedi.ttf)format("truetype");
+}
+
+.font-star{
+  font-family: "starWars";
+  text-align: center;
+}
+.hidden{
+  display: none;
+}
+.logo{
+  height: 90px;
+  transition-property: opacity left top;
+transition-duration: 0.5s 0.8s 0.1s;
+transition-timing-function: ease linear ease;
+transition-delay: 0s 0s 1s;
+}
+.nav-icon{
+  padding:0;
+}
+.p-icon{
+  margin-top:-50px;
+  font-family: "starWars";
+  width: 100px;
+  height: 41px;
+
+}
+.background{
+  opacity: 0.9; 
+  background-color: gray;
+ }
+
 
  .text{
   margin-left:5%;
@@ -32,16 +101,29 @@ body{
 .nav__item {
    	 text-decoration: none;
      color:#fff;
+
+
    }
-.active{
-	background-color: #EB1914; 
+.nav-icon{
+  width: 30px;
+  height: 30px;
 
 }
-.nav__item:hover{
-    background-color: gray;
-    color: white;
-    width: 100%;
+.centrado{
+  margin-left: 170px;
 }
+/*.active{
+	background-color: #EB1914; 
+
+}*/
+.nav__item:hover{
+  background-color: #EB1914; 
+  color: white;
+}
+.active{
+  background-color: #EB1914; 
+
+} 
 .container-logo{
   opacity: 0.9;
   background-color: gray;
@@ -59,7 +141,6 @@ body{
 }
 
 #sobre-mi{
-  margin-top: 10vh;
   color: white;
   height: 100vh;
   opacity: 0.8;
@@ -70,7 +151,260 @@ body{
   height: 95vh;
 }
 
-.icon{
+#skills{
+  color: white;
+  height: 100vh;
+  opacity: 0.8;
+  background-color:#000;
+}
+
+//proyectos
+
+  .caption-style{
+    list-style-type: none;
+
+
+  }
+
+  .caption-style li{
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    margin-left:12%;
+  }
+
+  .caption-style li:hover .caption{
+    opacity: 2;
+  }
+
+  .caption-style li:hover img{
+    opacity: 1;
+    transform: scale(1.15,1.15);
+    -webkit-transform:scale(1.15,1.15);
+    -moz-transform:scale(1.15,1.15);
+    -ms-transform:scale(1.15,1.15);
+    -o-transform:scale(1.15,1.15);
+  }
+
+
+  .caption-style img{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    z-index: 4;
+  }
+
+
+  .caption-style .caption{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition:all 0.45s ease-in-out;
+    -moz-transition:all 0.45s ease-in-out;
+    -o-transition:all 0.45s ease-in-out;
+    -ms-transition:all 0.45s ease-in-out;
+    transition:all 0.45s ease-in-out;
+  }
+
+  .caption-style img{
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    -ms-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+  }
+  .caption-style .blur{
+    background-color: rgba(0,0,0,0.65);
+    height: 300px;
+    width: 300px;
+    z-index: 5;
+    position: absolute;
+  }
+
+  .caption-style .caption-text h1{
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .caption-style .caption-text{
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    top:50px;
+  }
+
+
+
+  /** content **/
+  .content{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 300px;
+  }
+  .content h1, .content h2{
+    font-family: 'Poiret One', cursive;
+    color: #ecf0f1;
+    padding: 0px;
+    margin: 0px;
+    font-weight: normal;
+  }
+
+  .content h1{
+    font-weight: 900;
+    font-size: 20px;
+  }
+
+  .content h2{
+    font-size:26px;
+  }
+
+  .content p{
+    color: #ecf0f1;
+    font-family: "Lato";
+    line-height: 28px;
+    font-size: 15px;
+    padding-top: 50px;
+  }
+
+  p.credit{
+    padding-top: 20px;
+    font-size: 12px;
+  }
+
+  p a{
+    color: #ecf0f1;
+  }
+
+section{
+  border: none;
+}
+/* Animation properties */
+.star {
+  animation: star 10s ease-out infinite;
+}
+.wars {
+  animation: wars 10s ease-out infinite;
+}
+.byline span {
+  animation: spin-letters 10s linear infinite;
+}
+.byline {
+  animation: move-byline 10s linear infinite;
+}
+
+/* Keyframes */
+@keyframes star {
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateY(-0.75em);
+  }
+  20% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateZ(-1000em);
+  }
+}
+
+@keyframes wars {
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateY(0.5em);
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateZ(-1000em);
+  }
+}
+
+@keyframes spin-letters {
+  0%, 10% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  30% {
+    opacity: 1;
+  }
+  70%, 86% {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes move-byline {
+  0% {
+    transform: translateZ(5em);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+
+.starwars-demo {
+  height: 17em;
+  perspective: 500px;
+  left: 50%;
+  position: absolute;
+  top: 53%;
+  transform: translate(-50%, -50%);
+  width: 50em;
+}
+
+.name{
+  margin-bottom: 5em;
+}
+
+.byline span {
+  display: inline-block;
+}
+
+img {
   width: 100%;
-}      
-  
+}
+
+
+.byline {
+  color: #fff;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 2.25em;
+  position: absolute;
+  left: -2em;
+  letter-spacing: 0.4em;
+  right: -2em;
+  text-align: center;
+  text-transform: uppercase;
+  top: 29%;
+}
+
+/*** Media queries for adjusting to different screen sizes ***/
+
+@media only screen and (max-width: 600px) {
+  .starwars-demo {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .starwars-demo {
+    font-size: 7px;
+  }
+
+}
