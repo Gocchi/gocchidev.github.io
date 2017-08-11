@@ -14,17 +14,26 @@ body{
 .img-full{
   width: 100%;
 }
+.icon-skill{
+  width:5em;
+  height:5em;
+}
+.about-img{
+  margin-top: 15vh;
+}
 
-#principal{
+#home{
   height: 100vh;
   border:0;
 }
+
 #contacto{
   opacity: 0.7;
   height: 20vh;
   margin: 0 auto;
 
 }
+
 
 #contacto p{
   color: white;
