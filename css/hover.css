@@ -1,0 +1,122 @@
+div.p19 a {
+  width: 330px;
+  height: 55px;
+  margin-left: 7em;
+  line-height: 55px;
+  position: absolute;
+  font-weight: lighter;
+}
+div.p19 a:before, div.p19 a:after {
+  content: '';
+  position: absolute;
+  width: 13%;
+  height: 13px;
+  background-color: #000;
+  -webkit-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.46, 0.97);
+  -moz-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.46, 0.97);
+  transition: all 0.3s cubic-bezier(0.17, 0.67, 0.46, 0.97);
+  opacity: 0;
+}
+div.p19 a:before {
+  top: -20px;
+  right: 0;
+}
+div.p19 a:after {
+  bottom: -35px;
+  left: 0;
+}
+div.p19 a .s1 {
+  position: absolute;
+  background-color: #26C9FF;
+  width: 0;
+  height: 13px;
+  top: -20px;
+  box-shadow: 0px 0px 0px #26C9FF;
+  right: 13%;
+  border-radius: 20px 10px 10px 20px;
+  -webkit-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.46, 0.97);
+  -moz-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.46, 0.97);
+  transition: all 0.3s cubic-bezier(0.17, 0.67, 0.46, 0.97);
+}
+div.p19 a .s1:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -1%;
+  right: 0;
+  bottom: -15%;
+  box-shadow: 0px 0px 0px #26C9FF;
+  border-radius: 20px 10px 10px 20px;
+}
+div.p19 a .s1:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 0%;
+  top: 0;
+  bottom: 0;
+  background-color: #FFFFFF;
+  -webkit-filter: blur(3px);
+  filter: blur(1px);
+  box-shadow: inset 0px 0px 10px #26C9FF;
+  border-radius: 20px 10px 10px 20px;
+}
+div.p19 a .s2 {
+  position: absolute;
+  background-color: #FF0000;
+  width: 0;
+  height: 13px;
+  bottom: -35px;
+  box-shadow: 0px 0px 0px #FF0000;
+  left: 13%;
+  border-radius: 10px 20px 20px 10px;
+  z-index: 1000;
+  -webkit-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.46, 0.97);
+  -moz-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.46, 0.97);
+  transition: all 0.3s cubic-bezier(0.17, 0.67, 0.46, 0.97);
+}
+div.p19 a .s2:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -1%;
+  right: 0;
+  bottom: -15%;
+  box-shadow: 0px 0px 0px #FF0000;
+  border-radius: 10px 20px 20px 10px;
+}
+div.p19 a .s2:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #FFFFFF;
+  -webkit-filter: blur(3px);
+  filter: blur(1px);
+  box-shadow: inset 0px 0px 10px #FF0000;
+  border-radius: 10px 20px 20px 10px;
+}
+div.p19 a:hover:before {
+  opacity: 1;
+}
+div.p19 a:hover:after {
+  opacity: 1;
+}
+div.p19 a:hover .s1 {
+  width: 87%;
+  box-shadow: 0px 0px 30px #26C9FF;
+  top: -20px;
+}
+div.p19 a:hover .s1:before {
+  box-shadow: 0px 0px 70px #26C9FF;
+}
+div.p19 a:hover .s2 {
+  width: 87%;
+  box-shadow: 0px 0px 30px #FF0000;
+  bottom: -35px;
+}
+div.p19 a:hover .s2:before {
+  box-shadow: 0px 0px 70px #FF0000;
+}
+
