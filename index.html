@@ -8,13 +8,14 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css"
 		>
+		<link rel="stylesheet" type="text/css" href="css/hover.css">
 		<link rel="icon" type="image/png" href="http://icons.iconarchive.com/icons/sensibleworld/starwars/1024/Darth-Vader-icon.png"/>
 
 
 	</head>
 	<body>
 		<div class="container-fluid">
-		<section id="home" class="container-fluid center">
+		<div id="home" class="container-fluid center">
 		<div class="navbar-fixed">
 		    <nav class="menu-nav">
 		      <div>
@@ -35,7 +36,7 @@
 				    <h2 class="byline" id="byline">Front End Developer Jr</h2>
 				  </div>	
 			</div>	
-		</section>
+		</div>
 
 		<section id="about" class="container-fluid separator">
 			<div class="container">
@@ -53,110 +54,127 @@
 
 		<section id="skills" class="container-fluid">
 			<div class="row">
-				<h2 class="font-star">skills</h2>
-					<div class="col m3 s3">
-						<h3>Básico</h3>
-						<ul>
-							<li>Node JS</li>
-							<li>React</li>
-							<li>Firebase</li>
-						</ul>
-					</div>
-						<div class="col m3 s3">
-						<h3>Intermedio</h3>
-						<ul>
-							<li>Version Control System (Git)</li>
-							<li>HTML5</li>
-							<li>CSS3</li>
-							<li>JavaScript</li>
-							<li>Responsive Web</li>
-							<li>Test Driven Developer</li>
-							<li>Materialize</li>
-							<li>Bootstrap</li>
-							<li>jQuery</li>
-						</ul>	
-					</div>
-				</div>
+				<h2 class="font-star">Skills</h2>
+				 <div class="col m6 s12">
+                  <div class="skillbar-title">
+                    <span>HTML5</span>
+                  </div>
+                  <div class="skillbar-bar">
+                  </div>
+                  <div class="skill-bar-percent"><strong>Intermedio</strong></div>
+                </div>
+                <!-- SKILL CSS -->
+                <div class="skillbar clearfix col m6 s12">
+                  <div class="skillbar-title">
+                    <span>CSS3</span>
+                  </div>
+                  <div class="skill-bar-percent"><strong>Intermedio</strong></div>
+                </div>
+                <!--SKILL BOOTSTRAP-->
+                <div class="skillbar clearfix col m6 s12">
+                  <div class="skillbar-title">
+                    <span>Bootstrap</span></div>
+                  <div class="skill-bar-percent"><strong>Intermedio</strong></div>
+                </div>
+                <div class="skillbar clearfix col m6 s12">
+                  <div class="skillbar-title">
+                    <span>Materialize</span></div>
+                  <div class="skill-bar-percent"><strong>Intermedio</strong></div>
+                </div>
+                <!-- SKILL JAVASCRIPT -->
+                <div class="skillbar clearfix col m6 s12">
+                  <div class="skillbar-title"><span>JavaScript</span></div>
+                  <div class="skill-bar-percent"><strong>Intermedio</strong></div>
+                </div>
+                <!-- SKILL JQUERY -->
+                <div class="skillbar clearfix col m6 s12">
+                  <div class="skillbar-title">
+                    <span>jQuery</span></div>
+                  <div class="skillbar-bar"></div>
+                  <div class="skill-bar-percent"><strong>Intermedio</strong></div>
+                </div>
+                <!--SKILL GITHUB-->
+                <div class="skillbar clearfix col m6 s12">
+                  <div class="skillbar-title"><span>GitHub</span></div>
+                  <div class="skill-bar-percent"><strong>Intermedio</strong></div>
+                </div>
+                <div class="skillbar clearfix col m6 s12">
+                  <div class="skillbar-title"><span>Node JS</span></div>
+                  <div class="skill-bar-percent"><strong>Intermedio</strong></div>
+                </div>
+                <div class="skillbar clearfix col m6 s12">
+                  <div class="skillbar-title"><span>React JS</span></div>
+                  <div class="skill-bar-percent"><strong>Básico</strong></div>
+                </div>
+                <div class="skillbar clearfix col m6 s12">
+                  <div class="skillbar-title"><span>Firebase</span></div>
+                  <div class="skill-bar-percent"><strong>Básico</strong></div>
+                </div>
+              </div>
 			</div>
 		</section>
 		
 		<section id="trabajos" class="container-fluid background-negro">
 			<h2 class="font-star">Portafolio</h2>
-				<div class="row caption-style">
+				<div class="row">
+				    <div class="col m4 s12">
+		                <a href="https://ilsecentenoz.github.io/amazon-materialize/" target="_blanck">
+		                  <img class="img-responsive" src="img/amazon.jpg" alt="amazon-web">
+		                  <div class="divFondo center">
+		                    <h3 class="title-port">Amazon Clon</h3>
+		                    <p></p>
+		                  </div>
+            			</a>
+          			</div>
 					<div class="col m4 s12">
-						<ul>
-							<li><a href="https://ilsecentenoz.github.io/Kaizen-ahorcado/"><img src="img/ahorcado.jpg" alt=""></a>
-								<div class="caption">
-								<div class="blur"></div>
-								<div class="caption-text">
-								 <h1>Mini sitio</h1>
-								 <p>Desarrolle el juego del ahorcado con javascript</p>
-								</div>
-								</div>
-							</li>
-						</ul>
-					</div>
+		                <a href="https://ilsecentenoz.github.io/Kaizen-ahorcado/" target="_blanck">
+		                  <img class="img-responsive" src="img/ahorcado.jpg" alt="ahorcado-web">
+		                  <div class="divFondo center">
+		                    <h3 class="title-port">Juego Ahorcado</h3>
+		                    <p>Realize lógica del juego y maquetaciónJavascript/HTML5 </p>
+		                  </div>
+            			</a>
+          			</div>
 					<div class="col m4 s12">
-						<ul>
-							<li><img src="http://via.placeholder.com/300x300" alt="">
-								<div class="caption">
-								<div class="blur"></div>
-								<div class="caption-text">
-								<h1>Amazing Caption</h1>
-								<p>Whatever It Is - Always Awesome</p>
-								</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="col m4 s12">
-						<ul>
-							<li><img src="http://via.placeholder.com/300x300" alt="">
-								<div class="caption">
-								<div class="blur"></div>
-								<div class="caption-text">
-								 <h1>Amazing Caption</h1>
-								 <p>Whatever It Is - Always Awesome</p>
-								</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="col m4 offset-m4 s12">
-						<ul>
-							<li><img src="http://via.placeholder.com/300x300" alt="">
-								<div class="caption">
-								<div class="blur"></div>
-								<div class="caption-text">
-								 <h1>Amazing Caption</h1>
-								 <p>Whatever It Is - Always Awesome</p>
-								</div>
-								</div>
-							</li>
-						</ul>
-					</div>
+		                <a href="https://ilsecentenoz.github.io/game-planet/" target="_blanck">
+		                  <img class="img-responsive" src="img/gameplanet.jpg" alt="gameplanet-web">
+		                  <div class="divFondo center">
+		                    <h3 class="title-port">Game Planet Clon</h3>
+		                    <p>Realize navBar del sitio y maquetación del inicio. GitHub colavorativo/Javascript/html/bootstrap</p>
+		                  </div>
+            			</a>
+          			</div>
 				</div>
-				
+				<div class="row">
+					<div class="col m4 offset-m4 s12">
+		                <a href="https://ilsecentenoz.github.io/amazon-materialize/" target="_blanck">
+		                  <img class="img-responsive" src="img/lyft.jpg" alt="amazon-web">
+		                  <div class="divFondo center">
+		                    <h3 class="title-port">Lyft Clon</h3>
+		                    <p>Proyecto creado para ayudar en la elección de una paleta de colores. Examen final con el uso del framework bootstrap y animated.css</p>
+		                  </div>
+            			</a>
+          			</div>
+				</div>
 			</section>
 
-		 	<section id="contacto"  class="page-footer red">
+		 	<section id="contacto">
 	          <div class="container-fluid">
 	            <div class="row">
-	              <div class="container">
-	              	<div class="col m12 s12">
-	              		<div class="col m2 offset-m2 s3 center">
-		              		<a href="mailto:ilsecenteno93@gmail.com?Subjest=Contacto" target="_top"><img class="icon-social responsive-img" src="img/icon-footer/correo.png"></a>	
-		              	</div>
-		              	<div class="col m2 s3 center">
-		              		<a href="tel:5561735116"><img class="icon-social responsive-img" src="img/icon-footer/smartphone.png"></a>
-		              	</div>
-		              	<div class="col m2 s3">
-		              		<a href="https://www.linkedin.com/in/ilse-centeno-z-b71838145/"><img class="icon-social responsive-img" src="img/icon-footer/linkedin.png"></a>
-		              	</div>
-		              	<div class="col m2 s3">
-		              		<a href="https://github.com/ilsecentenoz"><img class="icon-social responsive-img" src="img/icon-footer/github.png"></a>
-		              	</div>
-	              	</div>
+	              <h4 class="font-star">contactame</h4>
+	              <div class="col m6 s6">
+	              	<ul class="list-icon center">
+	              		<li><a href="mailto:ilsecenteno93@gmail.com?Subjest=Contacto" target="_top"><img class="icon-social responsive-img" src="img/icon-footer/correo.png"><p>centenoilse93@gmail.com</p></a></li>
+	              		<li><a href="tel:5561735116"><img class="icon-social responsive-img" src="img/icon-footer/smartphone.png"><p>55 6173 5116</p></a>
+		              	</li>
+		           	</ul>
+	              </div>
+	              <div class="col m6 s6">
+	              	<ul class="list-icon center">
+		              	<li><a href="https://www.linkedin.com/in/ilse-centeno-z-b71838145/"><img class="icon-social responsive-img" src="img/icon-footer/linkedin.png"><p>/ilse-centeno-z-b71838145</p></a>
+		              	</li>
+		              	<li><a href="https://github.com/ilsecentenoz"><img class="icon-social responsive-img" src="img/icon-footer/github.png"><p>/ilsecentenoz</p></a></li>
+	              	</ul>
 	              </div>
 	            </div>
 	          </div>
